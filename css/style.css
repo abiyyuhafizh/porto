@@ -11,7 +11,7 @@
 html, body {
     font-size: 16px;
     font-family: "Nunito", sans-serif;
-    line-height: 1.6;
+    /* line-height: 1.6; */
     scroll-padding-top: 70px;
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -20,6 +20,7 @@ html, body {
 .wrapper {
     width: 1024px;
     margin: auto;
+    padding: 20px 0px 20px 0px;
 }
 
 /* Navigation */
@@ -36,15 +37,18 @@ nav {
 nav .wrapper {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
+    align-items: center;
     padding: 30px 30px;
-    border: 1px solid;
+}
+
+.menu {
+    width: 50%;
 }
 
 .menu ul {
     display: flex;
-    list-style: none;
-    gap: 40px;
+    list-style-type: none;
+    justify-content: space-between;
 }
 
 .menu ul li a {
@@ -56,6 +60,11 @@ nav .wrapper {
 
 .menu ul li a:hover {
     color: #37a6fb;
+}
+
+.logo > img {
+    height: 45px;
+    border-radius: 9px;
 }
 
 /* Hero Section */
