@@ -37,7 +37,7 @@ nav .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 30px;
+    font-size: 1.3rem;
 }
 
 .menu {
@@ -53,7 +53,6 @@ nav .wrapper {
 .menu ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 1.3rem;
     transition: color 0.3s ease;
 }
 
@@ -63,7 +62,7 @@ nav .wrapper {
 
 .logo > img {
     height: 45px;
-    border-radius: 9px;
+    border-radius: 10px;
 }
 
 /* Hero Section */
