@@ -128,6 +128,10 @@ header {
     text-decoration: none;
 }
 
+.button:hover {
+    transform: translateY(-5px);
+}
+
 /* Profile Section */
 #profile {
     background: linear-gradient(135deg, #1C4D8D 0%, #0F2854 100%);
@@ -197,9 +201,73 @@ header {
     opacity: 0.8;
 }
 
+/* Skills Section */
+#SkillsLang {
+    background: #003285;
+    padding: 70px 0 80px 0;
+    color: #fff;
+}
+
+#SkillsLang h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+.skill-title {
+    font-size: 1.5rem;
+    margin: 30px 0 15px 0;
+    color: #C4E2F5;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+/* Table of Skills */
+
+.skill-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-table th {
+    background: rgba(255,255,255,0.2);
+    padding: 12px 20px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.skill-table td {
+    padding: 12px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    font-size: 1rem;
+}
+
+.skill-table tr:hover td {
+    background: rgba(255,255,255,0.08);
+}
+
+/* List of Skills */
+.Skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.Skills-list li {
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    background: rgba(255,255,255,0.05);
+    border-left: 4px solid #73A5CA;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
 /* ACHIEVEMENT SECTION */
 #achieve {
-    background: linear-gradient(135deg, #2b2f38 0%, #1a1e24 100%);
+    background: #2C5EAD;
     padding: 70px 0 80px 0;
     text-align: center;
 }
@@ -221,26 +289,27 @@ header {
     grid-template-columns: repeat(3, 1fr);
     gap: 100px;
     margin: 10px auto;
+    border-radius: 10%;
 }
 
-.achieve-card {
+.achieve-list {
     background: rgba(255,255,255,0.05);
     border-radius: 10px;
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255,255,255,0.1);
-    box-shadow: 0 15px 50px rgba(0,0,0,0.4);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    list-style: none;
 }
 
-.achieve-card a {
+.achieve-list a {
     display: block;
     color: #fff;
     text-decoration: solid;
     position: relative;
 }
 
-.achieve-card:hover {
+.achieve-list:hover {
     transform: translateY(-10px);  
-    box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.2);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .achieve-image {
@@ -258,11 +327,12 @@ header {
     transition: transform 0.4s ease;
 }
 
-.achieve-title {
+.achieve-title {   
     padding: 20px;
     font-size: 1.4rem;
-    background: rgba(0,0,0,0.3);
     backdrop-filter: blur(10px);
+    background-color: #0F2854;
+    border-radius: 0 0 10px 10px;
 }
 
 /* CONTACT SECTION */
@@ -311,7 +381,6 @@ header {
     height: 220px;
     margin: 0 auto;
 }
-
 
 .contact-photo img {
     width: 120%;
@@ -374,8 +443,7 @@ header {
 }
 
 .social-card:hover {
-    transform: translateY(-10px);
-    background-color: #1C4D8D;
+    background-color: #171f2a;
 }
 
 /* ICON SIZE */
@@ -403,7 +471,7 @@ header {
 
 /* Colors tetap sama */
 .email-card { background: rgba(246, 26, 26, 0.2); }
-.linkedin-card { background: rgba(0, 119, 181, 0.2); }
+.linkedin-card { background: #0f509182; }
 .instagram-card { background: rgba(225, 48, 108, 0.2); }
 
 
@@ -424,6 +492,7 @@ header {
 
 .download-cv:hover {
     transform: translateY(-8px);
+    box-shadow: 2px 5px 5px rgba(122, 120, 120, 0.84);
 }
 
 /* 
