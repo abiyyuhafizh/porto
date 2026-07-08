@@ -54,6 +54,7 @@ nav .wrapper {
     text-decoration: none;
     color: #fff;
     transition: color 0.3s ease;
+    font: "Font Awesome 7 Free";
 }
 
 .menu ul li a:hover {
